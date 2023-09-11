@@ -55,7 +55,7 @@ Once the application is running, you can use the following commands in the comma
 
 ## Repository Layout
 
-There are two portions to this codebase, and they work together to provide users quick and reliable messaging functionality from the CLI!
+There are two portions to this codebase, and they work together to provide users quick and reliable chat functionality from the CLI!
 1. The 'clientside' folder, responsible for:
 - constructing the message payload based off user input and sending along to the server
 - receiving messages and relaying information to users via CLI GUI
