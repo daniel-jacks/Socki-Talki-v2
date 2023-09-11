@@ -1,0 +1,8 @@
+{
+    "*config": "View current username and roomname.",
+    "*setUsername {username}": "Set username of current user, default username is \"none\".",
+    "*createRoom {roomname}": "Create new room with specified roomname.",
+    "*createRoom {roomname} -j": "Create and join new room with specified roomname.",
+    "*changeRoom {roomname}": "Change to room with specified roomname.",
+    "exit": "Close socki-talki connection."
+}

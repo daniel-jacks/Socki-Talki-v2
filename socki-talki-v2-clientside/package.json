@@ -1,0 +1,28 @@
+{
+  "name": "socki-talki-v2-client",
+  "description": "Socki-Talki-v2 Websocket Client side repo",
+  "version": "1.0.0",
+  "main": "client.js",
+  "bin": {
+    "talki": "./client.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-jacks/socki-talki-v2-client.git"
+  },
+  "author": "Daniel Jackson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daniel-jacks/socki-talki-v2-client/issues"
+  },
+  "homepage": "https://github.com/daniel-jacks/socki-talki-v2-client#readme",
+  "dependencies": {
+    "readline": "^1.3.0",
+    "utf8": "^3.0.0",
+    "ws": "^8.11.0"
+  }
+}
