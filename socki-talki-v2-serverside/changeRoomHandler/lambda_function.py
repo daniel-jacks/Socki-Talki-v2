@@ -4,7 +4,7 @@ import json
 def lambda_handler(event, context):
     client = boto3.resource('dynamodb')
     api = boto3.client('apigatewaymanagementapi', 
-    endpoint_url='https://2gc6x410ok.execute-api.us-west-2.amazonaws.com/test')
+    endpoint_url='https://2gc6x410ok.execute-api.us-west-2.amazonaws.com/production')
     roomTable = client.Table('Socki-Talki-Rooms')
     userTable = client.Table('Socki-Talki-Users')
     
