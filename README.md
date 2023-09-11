@@ -9,41 +9,38 @@ This project is a command-line-interface (CLI) chat application that uses Websoc
 To get started with the project, follow the steps below:
 
 1. Clone the repository.
-2. Install the required dependencies locally.
-3. Build backend with API Gateway, and all the separate function code.
-4. Update the WebSocket endpoint in the main file to connect to the desired server.
-5. Run the application.
+```bash
+git clone git@github.com:daniel-jacks/socki-talki-v2.git
+```
+2. Change into the 'clientside' folder.
+```bash
+cd socki-talki-v2/socki-talki-v2-clientside/
+```
+3. Install the required dependencies locally.
+```bash
+npm install
+```
+4. Run the app using 'node' command!
+```bash
+node client.js
+```
+
+_OPTIONAL_
+
+__Create global 'talki' CLI command:__
+1. Install Node.js package globally using
+```bash
+npm install -g
+```
+2. Run socki-talki from anywhere using 'talki' command!
+```bash
+talki
+```
 
 ## Prerequisites
 Make sure you have the following prerequisites before running the application:
 
 - Node.js
-- AWS Account
-
-## Installation
-
-__Clone the repository:__
-```bash
-git clone <repository_url>
-```
-
-<hr />
-
-__Install the dependencies:__
-
-```bash
-npm install
-```
-
-__Update the WebSocket endpoint:__
-```bash
-In the main file, update the WebSocket endpoint URL to connect to your desired server.
-```
-
-__Run the application:__
-```bash
-node client.js
-```
 
 ## Usage
 
@@ -55,6 +52,17 @@ Once the application is running, you can use the following commands in the comma
     - *createRoom <roomname> [-j]: Create a new room with an optional auto-join flag (-j).
     - *changeRoom <roomname>: Change the current room.
     - exit: Exit the application.
+
+## Repository Layout
+
+There are two portions to this codebase, and they work together to provide users quick and reliable messaging functionality from the CLI!
+1. The 'clientside' folder, responsible for:
+- constructing the message payload based off user input and sending along to the server
+- receiving messages and relaying information to users via CLI GUI
+
+2. The 'serverside' folder, resopnsible for: 
+- handling user requests depending on requested endpoint
+- updating users' usernames and rooms according to user requests (these values are stored in DynamoDB, however our Lambda functions access and update these tables according to user reqeusts)
 
 ## Contributing
 
@@ -70,7 +78,3 @@ Contributions to the project are welcome. If you want to contribute, please foll
 ## License
 
 MIT License
-
-Please replace `<project_name>`, `<repository_url>`, and `<main_file>` with appropriate values specific to your project. You can also customize the sections as needed.
-
-Let me know if you need any further assistance!
