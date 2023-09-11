@@ -38,7 +38,7 @@ talki
 ```
 
 ## Prerequisites
-Make sure you have the following prerequisites before running the application:
+Make sure you have the following prerequisites before attemping to build and run the application:
 
 - Node.js
 
@@ -49,7 +49,7 @@ Once the application is running, you can use the following commands in the comma
     - *help: Display a list of available commands.
     - *config: Show the current username and roomname.
     - *setUsername <username>: Set the username.
-    - *createRoom <roomname> [-j]: Create a new room with an optional auto-join flag (-j).
+    - *createRoom <roomname> -j: Create a new room with an optional auto-join flag '-j'.
     - *changeRoom <roomname>: Change the current room.
     - exit: Exit the application.
 
