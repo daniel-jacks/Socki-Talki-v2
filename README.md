@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-# Socki-Talki
+# Socki-Talki-v2
 
 ## Summary
 This project is a command-line interface (CLI) chat application that uses Websockets, JavaScript, Python, and the following AWS Services: API Gateway, AWS Lambda, and DynamoDB. On the client-side, I used JavaScript and a few CLI libraries to allow users to interact with the command line and use it as a chat graphical user interface (GUI). The back-end is serverless, using an AWS API Gateway to handle websocket requests and route traffic to a series of Lambdas according to request type. Finally, DynamoDB is used to persist users' connection IDs and keep track of users' respective chat rooms.
