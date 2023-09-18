@@ -57,10 +57,10 @@ Once the application is running, you can use the following commands in the comma
 
 There are two portions to this codebase, and they work together to provide users quick and reliable chat functionality from the CLI!
 1. The 'clientside' folder, responsible for:
-- constructing the message payload based off user input and sending along to the server.
+- constructing the message payload based off user input and sending to the server.
 - receiving messages and relaying information to users via CLI GUI.
 
-2. The 'serverside' folder, resopnsible for: 
+2. The 'serverside' folder, responsible for: 
 - handling user requests depending on requested endpoint.
 - updating users' usernames and rooms according to user requests (these values are stored in DynamoDB, however our Lambda functions access and update these tables according to user reqeusts).
 
