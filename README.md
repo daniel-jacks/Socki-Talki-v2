@@ -32,7 +32,7 @@ __Create global 'talki' CLI command:__
 ```bash
 npm install -g
 ```
-2. Run socki-talki from anywhere using 'talki' command!
+2. Run socki-talki from anywhere in the CLI using 'talki' command!
 ```bash
 talki
 ```
