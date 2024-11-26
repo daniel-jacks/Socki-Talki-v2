@@ -56,7 +56,10 @@ rl.on("line", message => {
     let payload;
     switch (command) {
         case "*help":
-            console.table(json);
+            Object.entries(json).forEach(([key, value]) => {
+                console.log(`Command: ${key}`);
+                console.log(`         ${value}`);
+            });
             break;
 
         case "*config":
